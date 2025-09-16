@@ -1,0 +1,77 @@
+main {
+  margin: 6rem 1rem;
+
+  flex: 1;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+
+main > h1 {
+  text-align: center;
+}
+
+main > div {
+  display: flex;
+  gap: 4rem;
+  flex-direction: column;
+}
+
+.card {
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.card svg {
+  width: 25px;
+  height: 25px;
+}
+
+.card .display {
+  width: 100%;
+  height: 250px;
+
+  background-color: lightcoral;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card .display > p {
+  padding: 1rem;
+  
+  font-size: 2.8rem;
+  text-align: center;
+
+  color: var(--color-text-on-image);
+}
+
+.card .description {
+  padding: 1rem;
+
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+
+.card .description > h1 {
+  text-align: center;
+}
+
+.card .description > p:last-of-type {
+  font-size: 1.2rem;
+
+  color: var(--color-body-text);
+}
+
+.card .name {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.card .name > div {
+  display: flex;
+  gap: 20px;
+}
