@@ -1,14 +1,14 @@
 @import "./variables.css";
 
 header {
-  /* width: 100%;
-  max-width: 100%;
-  min-width: 100%; */
-
   flex: 1;
 }
 
 .avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   position: relative;
   z-index: 1;
   overflow: hidden;
@@ -32,17 +32,11 @@ header {
 .avatar > div::before {
   content: "";
   position: absolute;
-  inset: 0; 
+  inset: 0;
   background: var(--color-accent-bg);
-  transform: skewY(-20deg) translateY(-20%); 
-  transform-origin: top left;     
+  transform: skewY(-20deg) translateY(-20%);
+  transform-origin: top left;
   z-index: -1;
-}
-
-@media (max-width: 320px) {
-  .avatar > div {
-    height: 400px;
-  }
 }
 
 .avatar > div > h1 {
@@ -81,4 +75,15 @@ header {
 .social-media > svg {
   width: 40px;
   height: 40px;
+}
+
+@media (max-width: 290px) {
+  .avatar > div {
+    height: 400px;
+  }
+
+  .social-media > svg {
+    width: 30px;
+    height: 30px;
+  }
 }

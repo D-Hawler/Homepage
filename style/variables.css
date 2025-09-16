@@ -42,3 +42,13 @@ h1 {
 p {
   font-size: 1.5rem;
 }
+
+@media (max-width: 290px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
+}

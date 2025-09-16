@@ -33,3 +33,18 @@ footer .social-media > svg {
   width: 50px;
   height: 50px;
 }
+
+@media (max-width: 290px) {
+  footer > address > div > h1 {
+    font-size: 2rem;
+  }
+
+  .contacts > p {
+    font-size: 0.8rem;
+  }
+
+  footer .social-media > svg {
+    width: 40px;
+    height: 40px;
+  }
+}

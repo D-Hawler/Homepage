@@ -40,7 +40,7 @@ main > div {
 
 .card .display > p {
   padding: 1rem;
-  
+
   font-size: 2.8rem;
   text-align: center;
 
@@ -74,4 +74,14 @@ main > div {
 .card .name > div {
   display: flex;
   gap: 20px;
+}
+
+@media (max-width: 290px) {
+  main {
+    margin: 4rem 0;
+  }
+
+  main > div {
+    gap: 2rem;
+  }
 }
