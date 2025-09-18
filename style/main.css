@@ -19,7 +19,7 @@ main > div {
 
 .card {
   border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  box-shadow: var(--box-shadow);
 }
 
 .card svg {
@@ -83,5 +83,47 @@ main > div {
 
   main > div {
     gap: 2rem;
+  }
+}
+
+@media (min-width: 768px) {
+  main {
+    margin: 3rem 5rem 10rem 5rem;
+  }
+
+  main > h1 {
+    font-size: 2.8rem;
+    text-align: start;
+  }
+
+  main > div {
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .card {
+  }
+
+  .card .display > p {
+    font-size: 2rem;
+  }
+
+  .card .name {
+    justify-content: space-between;
+  }
+
+  .card .name > p {
+    font-size: 1.2rem;
+  }
+
+  .card .description > p:last-of-type {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  main > div {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
