@@ -54,3 +54,25 @@ p {
     font-size: 1.2rem;
   }
 }
+
+@media (min-width: 1440px) {
+  html {
+    padding: 0 20%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (min-width: 4300px) {
+  html {
+    padding: 0 30%;
+  }
+}
+
+@media (min-width: 5000px) {
+  html {
+    padding: 0 30%;
+  }
+}

@@ -114,9 +114,6 @@ footer > picture > img {
   }
 }
 
-@media (min-width: 1024px) {
-}
-
 @media (min-width: 1440px) {
   footer {
     padding: 4rem 8rem;
@@ -132,5 +129,24 @@ footer > picture > img {
 
   .contacts > p {
     font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 2560px) {
+  footer > address > div > h1 {
+    font-size: 6rem;
+  }
+
+  footer > address > div > p {
+    font-size: 2.2rem;
+  }
+
+  .contacts > p {
+    font-size: 2rem;
+  }
+
+  footer .social-media > svg {
+    width: 60px;
+    height: 60px;
   }
 }

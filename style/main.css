@@ -120,7 +120,48 @@ main > div {
 }
 
 @media (min-width: 1024px) {
+  main {
+    margin: 12rem 5rem 16rem 5rem;
+  }
+
   main > div {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(0.3fr, 1fr));
+  }
+}
+
+@media (min-width: 1440px) {
+  main > div {
+    gap: 6rem;
+  }
+
+  .card .display > p {
+    font-size: 3rem;
+  }
+
+  .card .name > p {
+    font-size: 2rem;
+  }
+
+  .card .name > div > svg {
+    width: 40px;
+    height: 40px;
+  }
+
+  .card .description > p:last-of-type {
+    font-size: 1.8rem;
+  }
+}
+
+@media (min-width: 2560px) {
+  .card .display > p {
+    font-size: 4rem;
+  }
+
+  .card .name > p {
+    font-size: 2.2rem;
+  }
+
+  .card .description > p:last-of-type {
+    font-size: 2rem;
   }
 }

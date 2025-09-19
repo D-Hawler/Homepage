@@ -5,6 +5,10 @@ header {
   z-index: 1;
 }
 
+header > div {
+  height: 100%;
+}
+
 header::before {
   content: "";
 
@@ -175,6 +179,9 @@ header::before {
     padding: 2rem 1rem;
 
     flex: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   header .social-media {
@@ -184,11 +191,34 @@ header::before {
 }
 
 @media (min-width: 1440px) {
+  header::before {
+    transform: skewY(-20deg) translateY(-40%);
+  }
+
   .avatar > div > h1 {
     font-size: 3.5rem;
   }
+}
 
-  .about {
-    margin: 6rem 2rem;
+@media (min-width: 2560px) {
+  header::before {
+    transform: skewY(-20deg) translateY(-50%);
+  }
+
+  header .social-media > svg {
+    width: 60px;
+    height: 60px;
+  }
+
+  .avatar > div > h1 {
+    font-size: 5rem;
+  }
+
+  .about > h1 {
+    font-size: 6rem;
+  }
+
+  .about > p {
+    font-size: 2.5rem;
   }
 }
