@@ -9,6 +9,7 @@ footer {
   gap: 40px;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
 }
 
 footer > address {
@@ -40,6 +41,8 @@ footer > picture > img {
 
   object-fit: contain;
   object-position: center;
+
+  border-radius: 8px;
 }
 
 @media (max-width: 290px) {
@@ -59,7 +62,7 @@ footer > picture > img {
 
 @media (min-width: 768px) {
   footer {
-    padding: 2.5rem;
+    padding: 4rem;
 
     flex-direction: row;
   }
@@ -103,5 +106,31 @@ footer > picture > img {
     margin-top: 1rem;
 
     justify-content: start;
+  }
+
+  footer .social-media > svg {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (min-width: 1024px) {
+}
+
+@media (min-width: 1440px) {
+  footer {
+    padding: 4rem 8rem;
+  }
+
+  footer > address > div > h1 {
+    font-size: 4rem;
+  }
+
+  footer > address > div > p {
+    font-size: 1.8rem;
+  }
+
+  .contacts > p {
+    font-size: 1.5rem;
   }
 }
